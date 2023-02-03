@@ -9,9 +9,6 @@ vim.cmd [[packadd packer.nvim]]
 
 packer.startup(function(use)
   use 'wbthomason/packer.nvim'
-  use({
-    'projekt0n/github-nvim-theme', tag = 'v0.0.7',
-  })
   use 'nvim-lualine/lualine.nvim' -- Statusline
   use 'nvim-lua/plenary.nvim' -- Common utilities
   use 'onsails/lspkind-nvim' -- vscode-like pictograms
@@ -52,5 +49,6 @@ packer.startup(function(use)
 
   use 'lewis6991/gitsigns.nvim'
   use 'dinhhuy258/git.nvim' -- For git blame & browse
-  use 'simeji/winresizer'
+  use 'simeji/winresizer' -- Resize window size
+  use 'folke/tokyonight.nvim'
 end)
